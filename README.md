@@ -37,6 +37,3 @@ Este proyecto fue diseñado y desarrollado por:
 
 Proyecto integrador desarrollado en 2026.
 
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone [https://github.com/tu-usuario/ayni.git](https://github.com/tu-usuario/ayni.git)
