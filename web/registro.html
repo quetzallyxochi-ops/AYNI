@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYNI - Crear Cuenta</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="tarjeta registro">
+        <div class="logo-container">
+            <img src="logo.png" alt="AYNI Logo">
+        </div>
+        
+        <h2>Crear Cuenta</h2>
+        
+        <form action="RegistroController" method="POST">
+            <div class="fila-doble">
+                <div class="input-wrapper">
+                    <label>Nombres</label>
+                    <i class="fa-solid fa-user icono-izq"></i>
+                    <input type="text" name="nombres" required>
+                </div>
+                <div class="input-wrapper">
+                    <label>Apellidos</label>
+                    <i class="fa-solid fa-user-group icono-izq"></i>
+                    <input type="text" name="apellidos" required>
+                </div>
+            </div>
+
+            <div class="fila-doble">
+                <div class="input-wrapper">
+                    <label>Tipo de Usuario</label>
+                    <select name="tipo_usuario" required>
+                        <option value="Institucional">Estudiante/Personal UPA</option>
+                        <option value="Local">Comunidad Local</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <label>Matrícula / Identificación</label>
+                    <i class="fa-solid fa-id-card icono-izq"></i>
+                    <input type="text" name="identificacion" placeholder="Ej. UP123456" required>
+                </div>
+            </div>
+
+            <div class="fila-doble">
+                <div class="input-wrapper">
+                    <label>Correo Electrónico</label>
+                    <i class="fa-solid fa-envelope icono-izq"></i>
+                    <input type="email" name="correo" required>
+                </div>
+                <div class="input-wrapper">
+                    <label>Contraseña</label>
+                    <i class="fa-solid fa-lock icono-izq"></i>
+                    <input type="password" name="password" required>
+                    <i class="fa-solid fa-eye-slash icono-der"></i>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn-principal">Registrarme</button>
+        </form>
+        
+        <div class="enlaces-footer">
+            ¿Ya tienes cuenta? <a href="login.html">Inicia Sesión aquí</a>
+        </div>
+        
+        <div class="enlaces-legales">
+            <a href="#">Términos y condiciones terminaron y sociodatos</a>
+            <a href="#">Olvidaste tu contraseña</a>
+        </div>
+    </div>
+</body>
+</html>

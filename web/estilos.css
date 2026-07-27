@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Degradado de fondo*/
+    background: linear-gradient(to bottom, #102e4a, #d26e2b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta.login { max-width: 450px; }
+.tarjeta.registro { max-width: 600px; }
+
+.logo-container img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0c3b5e;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #1a4a6e;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+/* Contenedor de inputs con íconos */
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-wrapper label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #102e4a;
+    margin-bottom: 8px;
+}
+
+.input-wrapper i.icono-izq {
+    position: absolute;
+    left: 15px;
+    top: 38px; /* Ajuste según el alto del input */
+    color: #102e4a;
+    font-size: 1.1rem;
+}
+
+.input-wrapper i.icono-der {
+    position: absolute;
+    right: 15px;
+    top: 38px;
+    color: #102e4a;
+    cursor: pointer;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px 12px 45px; /* Espacio a la izquierda para el ícono */
+    background-color: #eef3f8;
+    border: 1px solid #d0dbe5;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #d26e2b;
+    box-shadow: 0 0 8px rgba(210, 110, 43, 0.3);
+}
+
+/* Grilla para el formulario de registro */
+.fila-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.btn-principal {
+    background-color: #d26e2b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #b55a20;
+}
+
+.enlaces-footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.enlaces-footer a {
+    color: #188d8d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}
+
+.enlaces-legales {
+    margin-top: 25px;
+    font-size: 0.75rem;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.enlaces-legales a {
+    color: #777;
+    text-decoration: underline;
+}

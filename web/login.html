@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYNI - Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Librería para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="tarjeta login">
+        <div class="logo-container">
+            <img src="logo.png" alt="AYNI Logo">
+        </div>
+        
+        <h2>Bienvenido a AYNI</h2>
+        <h3>Inicia Sesión</h3>
+        
+        <form action="LoginController" method="POST">
+            <div class="input-wrapper">
+                <label>Correo Electrónico</label>
+                <i class="fa-solid fa-envelope icono-izq"></i>
+                <input type="email" name="correo" required>
+            </div>
+            
+            <div class="input-wrapper">
+                <label>Contraseña</label>
+                <i class="fa-solid fa-lock icono-izq"></i>
+                <input type="password" name="password" required>
+            </div>
+            
+            <button type="submit" class="btn-principal">Iniciar Sesión</button>
+        </form>
+        
+        <div class="enlaces-footer">
+            ¿Eres nuevo? <a href="registro.html">Crea una cuenta aquí</a>
+        </div>
+        
+        <div class="enlaces-legales">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+</body>
+</html>
